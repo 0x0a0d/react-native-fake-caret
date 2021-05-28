@@ -11,6 +11,8 @@ export const FakeCaret = forwardRef(({
                                        CaretComponent = CaretDefaultComponent,
                                      }, ref) => {
   const [visible, setVisible] = useState(false)
+  const [animation, setAnimation] = useState()
+
   useImperativeHandle(ref, () => ({
     show: () => setVisible(true),
     hide: () => setVisible(false),
@@ -20,7 +22,7 @@ export const FakeCaret = forwardRef(({
 
   useEffect(() => {
     if (visible) {
-      Animated.loop(Animated.sequence([
+      setAnimation(Animated.loop(Animated.sequence([
         Animated.delay(150),
         Animated.timing(fadeAim, {
           toValue: 1,
@@ -28,12 +30,18 @@ export const FakeCaret = forwardRef(({
           useNativeDriver: false
         }),
         Animated.delay(150),
-      ])).start()
-    } else {
-      fadeAim.setValue(0)
+      ])))
+    } else if (animation != null) {
+      animation.stop()
+      setAnimation(null)
     }
   }, [visible])
 
+  useEffect(() => {
+    if (animation != null) {
+      animation.start(() => fadeAim.setValue(0))
+    }
+  }, [animation])
   return (
     <Animated.View
       style={[
