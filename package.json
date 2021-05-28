@@ -1,6 +1,6 @@
 {
   "name": "react-native-fake-caret",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "main": "FakeCaret.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
@@ -8,11 +8,13 @@
   "keywords": [
     "caret",
     "caret fake",
+    "caret simulate",
     "caret faking",
     "caret cursor",
     "typing cursor",
     "typing fake",
     "typing icon",
+    "typing flash",
     "react native"
   ],
   "author": "0x0a0d",

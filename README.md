@@ -1,14 +1,14 @@
 # react-native-fake-caret
 
 creates a fake caret, used in some cases as otp focus
-> npm i --save @cylution/react-native-fake-caret
+> npm i --save react-native-fake-caret
 
 or
 
-> yarn add @cylution/react-native-fake-caret
+> yarn add react-native-fake-caret
 
 ## Demo
-![react-native-fake-caret.gif](https://github.com/0x0a0d/react-native-fake-caret/raw/master/demo/react-native-fake-caret.gif?raw=true&t=1622186458293)
+![react-native-fake-caret.gif](https://github.com/0x0a0d/react-native-fake-caret/raw/master/demo/react-native-fake-caret.gif?raw=true)
 
 ## Usage
 
