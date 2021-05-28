@@ -8,7 +8,7 @@ or
 > yarn add @cylution/react-native-fake-caret
 
 ## Demo
-![react-native-fake-caret.gif](https://github.com/0x0a0d/react-native-fake-caret/raw/master/demo/react-native-fake-caret.gif?raw=true)
+![react-native-fake-caret.gif](https://github.com/0x0a0d/react-native-fake-caret/raw/master/demo/react-native-fake-caret.gif?raw=true&t=1622186458293)
 
 ## Usage
 
