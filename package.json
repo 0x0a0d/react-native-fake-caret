@@ -1,5 +1,5 @@
 {
-  "name": "react-native-fake-caret",
+  "name": "@cylution/react-native-fake-caret",
   "version": "1.0.3",
   "main": "FakeCaret.js",
   "scripts": {
